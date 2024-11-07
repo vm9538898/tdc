@@ -75,7 +75,7 @@ services:
  
       - SMTP_HOST=smtp.gmail.com
       - SMTP_USERNAME=adriel020920@gmail.com
-      - SMTP_PASSWORD=bozcoylpqeiwebek
+      - SMTP_PASSWORD=qvwdewgdzexnxtsp
       - NEXT_PUBLIC_SMTP_FROM='Suporte' <adriel020920@gmail.com>
  
       - DISABLE_SIGNUP=false
@@ -133,17 +133,7 @@ echo "Criado e configurado com sucesso"
 
 clear
 
-###############################################
 
-echo "Iniciando Conteiner"
-
-
-docker-compose up -d
-
-echo "Typebot Instaldo... Realizando Proxy Reverso"
-
-
-clear
 
 ###############################################
 
@@ -265,3 +255,15 @@ sudo mv storage /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/storage /etc/nginx/sites-enabled
 
 sudo certbot --nginx --email $email --redirect --agree-tos -d painel.$dominio -d viwer.$dominio -d banco.$dominio
+
+###############################################
+
+echo "Iniciando Conteiner"
+
+
+docker-compose up -d
+
+echo "Typebot Instaldo... Realizando Proxy Reverso"
+
+
+clear
