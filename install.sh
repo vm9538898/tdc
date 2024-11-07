@@ -260,7 +260,7 @@ sudo certbot --nginx --email $email --redirect --agree-tos -d painel.$dominio -d
 
 echo "Iniciando Conteiner"
 
-
+cd typebot.io
 docker-compose up -d
 
 echo "Typebot Instaldo... Realizando Proxy Reverso"
